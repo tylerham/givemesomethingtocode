@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app>
+  <body>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"></script>
+    <script src="gmstc-angular.js" type="text/javascript"></script>
+
+    <div ng-init="things = [{name:'ToDo App', how:'TBD'}, {name:'Pomadoro App', how:'With a timer.'}]">
+    	<ul>
+    		<li ng-repeat="thing in things">
+    		   	You should code a {{thing.name}}.
+    		   	How?
+    		   	{{thing.how}}
+    		   </li>
+    		</ul>
+    </div>
+  </body>
+</html>
